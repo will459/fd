@@ -338,7 +338,7 @@ fn run() -> Result<ExitCode> {
         read_vcsignore: !(matches.is_present("no-ignore")
             || matches.is_present("rg-alias-hidden-ignore")
             || matches.is_present("no-ignore-vcs")),
-        read_parent_vcsignore: !(matches.is_present("no-ignore")
+        read_parent_ignore: !(matches.is_present("no-ignore")
             || matches.is_present("rg-alias-hidden-ignore")
             || matches.is_present("no-ignore-vcs")
             || matches.is_present("no-ignore-parent")),

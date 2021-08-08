@@ -24,11 +24,11 @@ pub struct Options {
     /// Whether to respect `.fdignore` files or not.
     pub read_fdignore: bool,
 
+    /// Whether to respect ignore files in parent directories or not.
+    pub read_parent_ignore: bool,
+
     /// Whether to respect VCS ignore files (`.gitignore`, ..) or not.
     pub read_vcsignore: bool,
-
-    /// Whether to respect VCS ignore files in parent directories or not.
-    pub read_parent_vcsignore: bool,
 
     /// Whether to respect the global ignore file or not.
     pub read_global_ignore: bool,
