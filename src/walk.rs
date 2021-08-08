@@ -68,7 +68,8 @@ pub fn scan(path_vec: &[PathBuf], pattern: Arc<Regex>, config: Arc<Options>) -> 
     walker
         .hidden(config.ignore_hidden)
         .ignore(config.read_fdignore)
-        .parents(config.read_fdignore || config.read_vcsignore)
+        .parents(config.read_parent_vcsignore)
+        //.parents(config.read_fdignore || config.read_vcsignore)
         .git_ignore(config.read_vcsignore)
         .git_global(config.read_vcsignore)
         .git_exclude(config.read_vcsignore)
