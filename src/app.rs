@@ -56,7 +56,7 @@ pub fn build_app() -> App<'static, 'static> {
                 .hidden_short_help(true)
                 .long_help(
                     "Show search results from files and directories that would otherwise be \
-                        ignored by '.gitignore' files in parent directories.",
+                        ignored by '.gitignore', '.ignore', or '.fdignore' files in parent directories.",
                 ),
         )
         .arg(
